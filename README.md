@@ -60,17 +60,12 @@ Key Insights
 # Summary
 
 <p>
-Comparing the proportions of five star ratings alone between Vine and non-Vine members, it can be observed that Vine members are not biased towards giving 5 star ratings specifically. In fact, the data indicates that a larger proportion of non-Vine members wrote 5 star product reviews relative to Vine members. 
+There is insufficient evidence to support the claim that Amazon Vine members exhibit a positive bias towards favourable product reviews. 
 
-However, if we compare the proportion of reviews higher than 3 stars between Vine and non-Vine members, we can see that 74.46% of the Vine members gave at least a 4 star rating while only 67.74% of the non-Vine members have done the same. 
+Although the proportion of four star reviews among Amazon Vine members exceeded that of non-Vine members at 42.55% and 15.93% respectively, the same positive bias was not observed when comparing the proportion of 5 star ratings between the two groups. In fact, the data indicated that a larger proportion of non-Vine members wrote five star product reviews relative to Vine members at 51.81% and 31.91% respectively. 
 
-We can also see the the bias of Vine members towards positive reviews when we compare the the proportions of four star ratings between Vine and non-Vine members. Results indicate that while 42.55% of the Vine members gave four star ratings, only 15.93% of the non-Vine members rated products similary in the absence of incentives. 
-
-In conclusion, Amazon Vine program members are positively biased towards rating the products they are paid to review. 
-
-Further statictical analysis can be used to support this claim by performing hypothesis tests on the difference in proportions of diffferent ratings from 2 independent samples. 
+To support these results, several hypothesis tests on the difference in proportions of diffferent ratings from vine and non-vine reviews were performed. The following tests are outlined below followed by a summary of their resulting p values. 
 </p>
-
 
 ```
 # Hypothesis Testing on the Difference of Two Proportions of 5 Star Rated Reviews from 2 Independent Populations (Paid and Unpaid)
@@ -94,8 +89,6 @@ Further statictical analysis can be used to support this claim by performing hyp
     
     # One-tailed Test:  H0: P1-P2 = 0   |   H1: P1-P2 > 0 
 ```
-
-
 ```
 # Hypothesis Testing on the Difference of Two Proportions of Reviews Rated at Least 4 stars from 2 Independent Populations (Paid and Unpaid)
 
@@ -107,8 +100,6 @@ Further statictical analysis can be used to support this claim by performing hyp
 # One-tailed Test:  H0: P1-P2 = 0    |   H1: P1-P2 > 0 
 ```
 
-
-
 <p align="center">
     <strong> P values from Hypothesis Testing</strong> <br>
     <img src = 'Resources/img8.png'>
@@ -116,4 +107,11 @@ Further statictical analysis can be used to support this claim by performing hyp
 
 
 <p>
+When comparing the proportion of 5 star ratings between Vine and non-Vine members, we have sufficient evidence at a 5% level of significance to support the claim that the proportions are unequal. However, the large p value from the one tailed test prevents us from concluding that the proportion of 5 star ratings from Vine members is greater than that of non-Vine members.
+
+When comparing the proportion of 4 star ratings between Vine and non-Vine members, we have sufficient evidence at a 5% level of significance to support the claim that the proportions are unequal. Given the small p values from the one tailed test, we also have sufficient evidence at the same significane level to support the claim that the proportion of 4 star ratings from Vine members is greater than that of non-Vine members.
+
+
+When comparing the proportion of reviews rated at least 4 stars between Vine and non-Vine members, we have insufficient evidence at a 5% level of significance to support the claim that the proportions are unequal. 
+This implies that we cannot rule out the possibility that there is no statistical difference in proportion of reviews rated at least 4 stars between Vine and non-Vine members. Therfore, we cannot conclude that Amazon Vine members are positively biased towards favourable product reviews.
 </p>
